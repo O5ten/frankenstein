@@ -18,7 +18,7 @@ The site is down on isup.me
 When: 
 Navigated to 192.168.8.1 
 
-and: 
+And: 
 Signed on through the basic auth
 
 Then: 
