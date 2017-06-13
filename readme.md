@@ -1,17 +1,17 @@
-#The idea
+# The idea
 Automate recovering from the bloody DNS reset every goddamn day. 
 
-##The Criteria
+## IsUp.me
 Given: 
 A site on a shaky mobile broadband
 
 When: 
-The bloody mobile broadband goes down 
+The site is down on isup.me
 
 Then: 
-a Timer triggers a Geb-script that drives to isup.me to see if the site is down every hour. 
+Geb-script on a set interval to isup.me to see if the site is down every hour. 
 
-##The Information
+## Router
 Given: 
 The site is down on isup.me
 
@@ -24,7 +24,7 @@ Signed on through the basic auth
 Then: 
 Navigate to the unit configuration and collect the bloody WAN IP
 
-##The Monster
+##Loopia
 Given: 
 The ip XXX.XXX.XXX.XXX has been collected from the router
 
