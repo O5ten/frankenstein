@@ -9,8 +9,8 @@ class LoopiaPage extends Page{
         loginCustomerZone {
             $("a#login-btn-cz").click();
             waitFor { $("input#username") && $("input#password") && $("input", value: "Logga in", type: "submit") }
-            $("input#username") << System.getProperty("monster.username")
-            $("input#password") << System.getProperty("monster.password")
+            $("input#username") << System.getProperty("loopia.username")
+            $("input#password") << System.getProperty("loopia.password")
             $("input", value: "Logga in", type: "submit").click()
         }
     }

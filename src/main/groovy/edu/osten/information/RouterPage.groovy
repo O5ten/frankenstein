@@ -13,8 +13,8 @@ class RouterPage extends Page {
         }
         login {
             $("span.logout").click()
-            $("input#username") << System.getProperty("information.username")
-            $("input#password") << System.getProperty("information.password")
+            $("input#username") << System.getProperty("router.username")
+            $("input#password") << System.getProperty("router.password")
             $("a", text: "Logga In").click()
             waitFor {
                 $("span#logout_span", text: "Logga ut")
