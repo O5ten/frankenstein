@@ -2,7 +2,7 @@ package edu.osten.information
 
 import geb.Page
 
-class InformationPage extends Page {
+class RouterPage extends Page {
     static url = "http://192.168.8.1"
     static content = {
         header {

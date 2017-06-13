@@ -16,13 +16,13 @@ clock.scheduleAtFixedRate(new TimerTask() {
     void run() {
         try{
             monster.investigate()
-        }catch(AssertionError | Exception e){
-            if(e.getMessage().contains("page contains 'It's just you'")){
+        }catch(AssertionError | Exception any){
+            if(any.getMessage().contains("page contains 'It's just you'")){
                 log.info "Nothing to do, site is up"
             }
-            log.error e.getMessage()
+            log.error any.getMessage()
         }
-        log.info "Awaiting the next lightning storm in ${HOURS} hours."
+        log.info "Waking up the monster the next lightning storm in ${HOURS} hours."
     }
 }, RUN_RIGHT_AWAY, EVERY_FOURTH_HOUR)
 
